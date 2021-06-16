@@ -66,7 +66,6 @@ namespace ConsoleApp11
             
             string elapsedTime = TimeElapsedToString(stopwatchIn.Elapsed);
 
-            stopwatchIn.Reset();
 
             return (jsonCar, elapsedTime);         
         }
@@ -86,9 +85,7 @@ namespace ConsoleApp11
 
             stopwatchOut.Stop();         
 
-            string elapsedTime = TimeElapsedToString(stopwatchOut.Elapsed);
-
-            stopwatchOut.Reset();
+            string elapsedTime = TimeElapsedToString(stopwatchOut.Elapsed);          
 
             string total = car.ToString();
 
